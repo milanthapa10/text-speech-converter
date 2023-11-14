@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url('bgimg.jpg');
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+    word-spacing: 3px;
+    letter-spacing: 1.5px;
+    gap:20px;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+
+    & span{
+        color: #f91350;
+    }
+    
+}
+
+.content{
+    width: 45%;
+    height: 50vh;
+    /* background-color: aliceblue; */
+}
+textarea{
+    resize: none;
+    height:40vh;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding:15px;
+    color:white;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    overflow-x: hidden;
+    overflow-y:scroll;
+    margin-bottom:20px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+textarea::placeholder{
+    color:white;
+    opacity: .4;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    justify-content: center;
+    gap:20px;
+}
+
+select{
+    width: 70%;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    border:0px;
+    padding: 1px 10px;
+    color: white;
+}
+select option{
+    color: black;
+}
+
+select:focus {
+    outline: none;
+}
+
+button{
+    width: 120px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    background-color: #f91350;
+    border: 0px;
+    color:white;
+    transition: 0.5s ease;
+    letter-spacing: 1px;
+
+    & i{
+        margin-right:10px;
+    }
+}
+
+button:hover{
+    cursor: pointer;
+    scale:1.06;  
+}
+
+
+/* Responsive code  */
+
+@media  only screen and (min-width:280px) and (max-width:480px) {
+    
+    body{
+        padding: 20px;
+    }
+
+    h1{
+        font-size: 22px;
+    }
+
+    .content{
+        width: 100%;
+    }
+    
+    select option{
+        font-size: 12px;
+    }
+}
+
+
+@media  only screen and (min-width:481px) and (max-width:768px) {
+    
+    body{
+        padding: 20px;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    .content{
+        width: 90%;
+    }
+    
+    select option{
+        font-size: 12px;
+    }
+}
+
